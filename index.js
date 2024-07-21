@@ -1,16 +1,18 @@
+// receivesAFunction function
 function receivesAFunction(callback) {
-    callback();
-  }
-  
-  function returnsANamedFunction() {
-    function myNamedFunction() {
-      console.log("Hello from named function!");
-    }
-    return myNamedFunction;
-  }
-  
-  function returnsAnAnonymousFunction() {
-    return function() {
-      console.log("Hello from anonymous function!");
-    };
-  }
+  callback();
+}
+
+// returnsANamedFunction function
+function returnsANamedFunction() {
+  return function namedFunction() {
+    console.log("I'm a named function!");
+  };
+}
+
+// returnsAnAnonymousFunction function
+function returnsAnAnonymousFunction() {
+  return function() {
+    console.log("I'm an anonymous function!");
+  };
+}
